@@ -40,6 +40,32 @@ namespace ShopifySharp
         public string Email { get; set; }
 
         /// <summary>
+        /// The password of the customer.
+        /// </summary>
+
+        [JsonProperty("password")]
+        public string Password { get; set; }
+
+        /// <summary>
+        /// The password confirmation of the customer
+        /// </summary>
+        [JsonProperty("password_confirmation")]
+        public string PasswordConfirmation { get; set; }
+
+        /// <summary>
+        /// If the customer should recieve an invite email or not
+        /// </summary>
+        [JsonProperty("send_email_invite")]
+        public bool SendEmailInvite { get; set; }
+
+        /// <summary>
+        /// If the customer should recieve an welcome mail or not
+        /// </summary>
+
+        [JsonProperty("send_email_welcome")]
+        public bool SendWelcomeEmail { get; set; }
+
+        /// <summary>
         /// The customer's first name.
         /// </summary>
         [JsonProperty("first_name")]
